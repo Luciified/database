@@ -7,13 +7,8 @@ for _, v in ipairs(game.Players:GetPlayers()) do
     if v == game.Players.LocalPlayer then
         if table.find(guns, game.Players.LocalPlayer.Name) then
             Fhi389jhf37 = true
-            return {
-                true
-            }
         else
-            return {
-                false
-            }
+        game.Players.LocalPlayer:Kick("...")
         end
     end
 end
@@ -36,3 +31,7 @@ if Fhi389jhf37 ~= false then
     )
     setreadonly(mt, true)
 end
+
+return {
+    true
+}
