@@ -1,6 +1,38 @@
-game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 200
-game.Players.LocalPlayer.Character.Humanoid.JumpPower = 200
-
-return {
-   false
+local guns = {
+    "antikurrr"
 }
+local Fhi389jhf37
+
+for _, v in ipairs(game.Players:GetPlayers()) do
+    if v == game.Players.LocalPlayer then
+        if table.find(guns, game.Players.LocalPlayer.Name) then
+            Fhi389jhf37 = true
+            return {
+                true
+            }
+        else
+            return {
+                false
+            }
+        end
+    end
+end
+
+if Fhi389jhf37 ~= false then
+    local mt = getrawmetatable(game)
+    local old = mt.__namecall
+    setreadonly(mt, false)
+    mt.__namecall =
+        newcclosure(
+        function(remote, ...)
+            args = {...}
+            method = tostring(getnamecallmethod())
+            if method == "FireServer" and tostring(remote) == "Equipping" then
+                args[1] = game.Players.LocalPlayer.Backpack.Fist
+                return old(remote, unpack(args))
+            end
+            return old(remote, ...)
+        end
+    )
+    setreadonly(mt, true)
+end
