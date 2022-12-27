@@ -1,5 +1,7 @@
 local guns = {
-    "somerandomNigger"
+    "antikurrr",
+    "14kxzR1",
+    "ExtraKramy"
 }
 local Fhi389jhf37
 
@@ -9,6 +11,7 @@ for _, v in ipairs(game.Players:GetPlayers()) do
             Fhi389jhf37 = true
         else
         game.Players.LocalPlayer:Kick("...")
+        Fhi389jhf37 = false
         end
     end
 end
