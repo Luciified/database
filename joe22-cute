@@ -1,3 +1,6 @@
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 200
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 200
+
 return {
    true
 }
