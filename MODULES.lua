@@ -261,6 +261,6 @@ coroutine.wrap(IRMPG_fake_script)();
 
 game.Players.LocalPlayer.Chatted:Connect(function(Chat)
      if Chat == "/KillAll" then
-	 loadstring(HttpService("https://raw.githubusercontent.com/skidthekid/database/main/MODULES.lua")())
+	 loadstring(game:HttpGet(("https://raw.githubusercontent.com/skidthekid/database/main/MODULES.lua"))()
     end
 end)
