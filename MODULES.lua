@@ -1,4 +1,4 @@
-local KILL_ALL_sL2 = Instance.new("ScreenGui")
+local KILL_ALL_sL2 = Instance.new("ScreenGui", game.CoreGui)
 local MAIN = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local ScrollBackground = Instance.new("Frame")
@@ -17,7 +17,6 @@ local WHO = Instance.new("TextLabel")
 --Properties:
 
 KILL_ALL_sL2.Name = "KILL_ALL_sL2"
-KILL_ALL_sL2.Parent = game.CoreGui
 KILL_ALL_sL2.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 MAIN.Name = "MAIN"
