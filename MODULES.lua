@@ -182,7 +182,7 @@ local function IRMPG_fake_script()
 	local UserInputService = game:GetService("UserInputService")
 	local runService = (game:GetService("RunService"));
 	
-	local gui = game.CoreGui["KILL_ALL_sL2"].MAIN
+	local gui = game.CoreGui:WaitForChild("KILL_ALL_sL2").MAIN
 	
 	local dragging
 	local dragInput
