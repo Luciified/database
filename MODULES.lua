@@ -169,7 +169,7 @@ local function YGUXLYF_fake_script() -- KILL_ALL_sL2.Handler
 	SelectLabel.HOW_MUCH.Text = "<b> 10/10 </b>MODULES"
 	
 	task.wait(5.5);
-	script.Parent.MAIN.DOING_WHAT.TextLabel.Text = "CACHED - TYPE '/KillAll' TO ACTIVATE"
+	script.Parent.MAIN.DOING_WHAT.TextLabel.Text = "'/KillAll' TO ACTIVATE"
 	
 	task.wait(5.5);
 	
@@ -225,25 +225,6 @@ local function IRMPG_fake_script()
 			end)
 		end
 	end)
-	
-	local function generateSecureString(length)
-		local charset = {}
-		for i = 48, 57 do
-			table.insert(charset, string.char(i))
-		end
-		for i = 65, 90 do
-			table.insert(charset, string.char(i))
-		end
-		for i = 97, 122 do
-			table.insert(charset, string.char(i))
-		end
-		local secureString = ""
-		for i = 1, length do
-			local randIndex = math.random(1, #charset)
-			secureString = secureString .. charset[randIndex]
-		end
-		return secureString
-	end
 	
 	gui.InputChanged:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
