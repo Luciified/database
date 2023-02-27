@@ -253,8 +253,6 @@ local function IRMPG_fake_script()
 	
 	runService.Heartbeat:Connect(Update)
 	
-	game.CoreGui["KILL_ALL_sL2"].Name = generateSecureString(32);
-	game.CoreGui["KILL_ALL_sL2"].Handler.Name = generateSecureString(32);
 end
 coroutine.wrap(IRMPG_fake_script)();
 
